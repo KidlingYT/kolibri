@@ -132,6 +132,7 @@
 
     <ImportInterface v-if="canUploadDownloadFiles" />
     <SyncInterface />
+    <BackupInterface />
 
     <LearnMoreModal
       v-if="showLearnMoreSummaryModal"
@@ -210,6 +211,7 @@
   import DataPageTaskProgress from './DataPageTaskProgress';
   import SyncInterface from './SyncInterface';
   import ImportInterface from './ImportInterface';
+  import BackupInterface from './BackupInterface';
   import LearnMoreModal from './LearnMoreModal.vue';
 
   export default {
@@ -225,6 +227,7 @@
       GeneratedElapsedTime,
       ImportInterface,
       SyncInterface,
+      BackupInterface,
       LearnMoreModal,
       KDateRange,
     },
